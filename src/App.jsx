@@ -50,7 +50,7 @@ export default function App() {
         <tbody>
           {tasks.map((item) => (
             <tr key={item.id} style={{ textAlign: 'left' }}>
-              <td style={{ padding: '12px', border: '1px solid #ddd' }}>{item.task}</td>
+              <td style={{ padding: '12px', border: '1px solid #ddd' }}><strong>{item.task}</strong></td>
               <td style={{ padding: '12px', border: '1px solid #ddd' }}>{item.startDate}</td>
               <td style={{ padding: '12px', border: '1px solid #ddd' }}>{item.expiringDate}</td>
             </tr>
