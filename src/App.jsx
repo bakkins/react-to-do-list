@@ -22,6 +22,8 @@ export default function App() {
     setExpiringDate("");
   };
 
+  
+
 
   return (
     <div style={{ textAlign: 'center', marginTop: '50px', fontFamily: 'sans-serif' }}>
@@ -42,6 +44,7 @@ export default function App() {
             <th style={{ padding: '12px', border: '1px solid #ddd' }}>To do</th>
             <th style={{ padding: '12px', border: '1px solid #ddd' }}>Start</th>
             <th style={{ padding: '12px', border: '1px solid #ddd' }}>End</th>
+            <th style={{ padding: '12px', border: '1px solid #ddd' }}>Options</th>
           </tr>
         </thead>
         <tbody>
