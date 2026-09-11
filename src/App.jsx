@@ -50,7 +50,11 @@ export default function App() {
             <th style={{ padding: '12px', border: '1px solid #ddd' }}>To do</th>
             <th style={{ padding: '12px', border: '1px solid #ddd' }}>Start</th>
             <th style={{ padding: '12px', border: '1px solid #ddd' }}>End</th>
+<<<<<<< HEAD
             <th style={{ padding: '12px', border: '1px solid #ddd' }}>Options</th>
+=======
+            <th style={{ padding: '12px', border: '1px solid #ddd' }}>Action</th>
+>>>>>>> 8f2a9c6 (added delete button to each added row)
           </tr>
         </thead>
         <tbody>
@@ -59,6 +63,7 @@ export default function App() {
               <td style={{ padding: '12px', border: '1px solid #ddd' }}><strong>{item.task}</strong></td>
               <td style={{ padding: '12px', border: '1px solid #ddd' }}>{item.startDate}</td>
               <td style={{ padding: '12px', border: '1px solid #ddd' }}>{item.expiringDate}</td>
+              <button onClick={() => handleDeleteRow(item.id)}>Delete</button>
             </tr>
           ))}
         </tbody>
