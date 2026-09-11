@@ -22,7 +22,13 @@ export default function App() {
     setExpiringDate("");
   };
 
-  
+     const handleDeleteRow = (idToRemove) => {
+    // .filter() paturēs tikai tos uzdevumus, kuru ID nesakrīt ar izvēlēto
+    const filteredTasks = tasks.filter(item => item.id !== idToRemove);
+    setTasks(filteredTasks);
+  };
+
+
 
 
   return (
